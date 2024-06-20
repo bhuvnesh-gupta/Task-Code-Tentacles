@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-image: url("/src/assets/svg/Aboutvector.svg"),
+    url("/src/assets/svg/Bodyvector.svg"),
+    url("/src/assets/svg/Partnervector.svg");
+  background-position: 150px 2525px, 1350px 3300px, -30px 3340px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  font-family: "Bakbak one", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 330px;
+  height: auto;
+  gap: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.box::before {
+  position: absolute;
+  content: "";
+  top: -70px;
+  left: 120px;
+  width: 20%;
+  height: 540px;
+  transform: rotate(0deg);
+  z-index: -2;
+}
+
+.box:hover::before {
+  top: -80px;
+  left: 110px;
+  width: 20%;
+  height: 540px;
+  background: #21e786;
+  border-radius: 10px;
+  z-index: -2;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
