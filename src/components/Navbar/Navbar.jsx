@@ -31,7 +31,7 @@ export const Navlinks = [
   {
     id: 1,
     name: "FAQS",
-    link: "/",
+    link: "/#",
   },
 ];
 const Navbar = ({ theme, setTheme }) => {
@@ -60,7 +60,7 @@ const Navbar = ({ theme, setTheme }) => {
                   </a>
                 </li>
               ))}
-              {/* DarkMode feature implement */}
+
               {theme === "dark" ? (
                 <BiSolidMoon
                   onClick={() => setTheme("light")}

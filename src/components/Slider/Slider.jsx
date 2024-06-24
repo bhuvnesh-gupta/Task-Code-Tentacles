@@ -8,11 +8,11 @@ const Slider = () => {
         <img
           src={Aliens}
           alt="aliens"
-          className="w-full h-full object-contain absolute opacity-80   "
+          className="w-full h-full object-contain relative opacity-80   "
         />
       </div>
 
-      <div className="absolute top-[395px] left-0 w-full h-full flex flex-col justify-center items-center text-center text-[#ffffff] z-80">
+      <div className="absolute top-[390px] left-0 w-full h-full flex flex-col justify-center items-center text-center text-[#ffffff] z-80">
         <div className=" w-full mx-auto px-4  ">
           <div>
             <h1
@@ -36,7 +36,7 @@ const Slider = () => {
               <button className=" bg-[#21E786] text-[#ffffff] text-base font-normal py-3 px-6 rounded hover:opacity-80">
                 Connect Wallet
               </button>
-              <button className=" border-2 text-base py-3 px-6 rounded border-[#21E786] hover:opacity-80">
+              <button className=" lg:border-2 lg:text-base py-3 px-6 rounded lg:border-[#21E786]  hover:opacity-80 md:bg-[#21E786] md:text-[#ffffff]">
                 Whitelist Now
               </button>
             </div>
